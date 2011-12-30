@@ -1,6 +1,8 @@
 ; these two commands allow smooth scrolling with still cursor
 ; use C-, to scroll up, C-. to scroll down
 
+; author: Petr Glotov
+
 (defun scroll-one-down ()
   (interactive)
   (scroll-down 1)
