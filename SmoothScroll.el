@@ -2,7 +2,7 @@
 ; use C-, to scroll up, C-. to scroll down
 
 ; author: Petr Glotov
-; modifiled: Takaaki Ishikawa
+; modified: Takaaki Ishikawa
 
 (defvar smoothscroll-sticked-point (current-column))
 (run-with-idle-timer
