@@ -4,11 +4,13 @@
 ; author: Petr Glotov
 ; modified: Takaaki Ishikawa
 
+;;;###autoload
 (defun scroll-one-down ()
   (interactive)
   (scroll-down 1)
   (line-move-visual -1))
 
+;;;###autoload
 (defun scroll-one-up ()
   (interactive)
   (scroll-up 1)
