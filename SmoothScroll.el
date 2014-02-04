@@ -2,17 +2,21 @@
 ; use C-, to scroll up, C-. to scroll down
 
 ; author: Petr Glotov
+; modified: Takaaki Ishikawa
 
+;;;###autoload
 (defun scroll-one-down ()
   (interactive)
   (scroll-down 1)
-  (previous-line)
-)
-(global-set-key [(control ?,)] 'scroll-one-down)
+  (line-move-visual -1))
 
+;;;###autoload
 (defun scroll-one-up ()
   (interactive)
   (scroll-up 1)
-  (next-line)
-)
+  (line-move-visual 1))
+
+(global-set-key [(control ?,)] 'scroll-one-down)
 (global-set-key [(control ?.)] 'scroll-one-up)
+
+(provide 'smoothscroll)
